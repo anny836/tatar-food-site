@@ -46,6 +46,10 @@
 
     .buttons {
       margin-bottom: 20px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap; /* Позволяет кнопкам переноситься */
     }
 
     .btn {
@@ -53,10 +57,10 @@
       color: white;
       background-color: #e74c3c;
       padding: 12px 25px;
-      margin: 0 10px;
       border-radius: 8px;
       font-weight: bold;
       transition: 0.3s;
+      display: inline-block;
     }
 
     .btn:hover {
@@ -120,10 +124,21 @@
     }
 
     /* Адаптивность */
-    @media (max-width: 768px) {
+    max-width: 768px {
       .hero h1 { font-size: 36px; }
       .hero h2 { font-size: 20px; }
       .card { width: 80%; }
+
+      .buttons {
+        flex-direction: column; /* Кнопки друг под другом */
+        gap: 15px;
+      }
+
+      .btn {
+        width: 100%; /* Кнопки на всю ширину блока */
+        max-width: 250px;
+        margin: 0 auto; /* Центрирование */
+      }
     }
   </style>
 </head>
@@ -160,7 +175,8 @@
   <!-- Доставка -->
   <section class="delivery">
     <h2>🚚 Быстрая доставка татарской кухни</h2>
-    <p>Работаем ежедневно<br>10:00 — 20:00</p>
+    <p>Работаем ежедневно
+10:00 — 20:00</p>
   </section>
 
   <!-- Футер -->
@@ -171,3 +187,9 @@
 
 </body>
 </html>
+Join group chat on Telegram
+Join group chat on Telegram
+t.me
+
+
+
