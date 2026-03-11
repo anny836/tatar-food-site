@@ -1,94 +1,173 @@
-href="https://wa.me/79224166606" target="_blank">Заказать в WhatsApp</a>
-    </div>
-    <p>Доставка с 10:00 до 20:00</p>
-  </div>
-</header>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Татарская кухня</title>
+  <style>
+    /* Общие стили */
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fff8f0;
+      color: #333;
+    }
 
-<main>
+    a {
+      text-decoration: none;
+    }
+
+    /* Секция hero */
+    .hero {
+      position: relative;
+      text-align: center;
+      color: white;
+      background: url('https://i.postimg.cc/rzgbZqNr/IMG-7493.jpg') center/cover no-repeat;
+      padding: 120px 20px;
+    }
+
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.5);
+      display: inline-block;
+      padding: 40px;
+      border-radius: 15px;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+
+    .hero h2 {
+      font-size: 24px;
+      margin-bottom: 30px;
+    }
+
+    .buttons {
+      margin-bottom: 20px;
+    }
+
+    .btn {
+      text-decoration: none;
+      color: white;
+      background-color: #e74c3c;
+      padding: 12px 25px;
+      margin: 0 10px;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #c0392b;
+    }
+
+    /* Популярные блюда */
+    .section {
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    .section h2 {
+      font-size: 32px;
+      margin-bottom: 40px;
+      color: #e74c3c;
+    }
+
+    .menu {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .card {
+      background-color: #fff3e0;
+      padding: 20px 30px;
+      border-radius: 12px;
+      font-size: 18px;
+      font-weight: bold;
+      transition: transform 0.3s, box-shadow 0.3s;
+      cursor: pointer;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    }
+
+    /* Секция доставки */
+    .delivery {
+      text-align: center;
+      background-color: #fceee6;
+      padding: 60px 20px;
+      font-size: 20px;
+      color: #e74c3c;
+    }
+
+    /* Футер */
+    footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 30px 20px;
+    }
+
+    footer .phone {
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    /* Адаптивность */
+    @media (max-width: 768px) {
+      .hero h1 { font-size: 36px; }
+      .hero h2 { font-size: 20px; }
+      .card { width: 80%; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero секция -->
+  <section class="hero">
+    <div class="overlay">
+      <h1>Селам</h1>
+      <h2>Самый вкусный чак-чак и татарская кухня</h2>
+
+      <div class="buttons">
+        <a class="btn telegram" href="https://t.me/+79224166606" target="_blank">Написать в Telegram</a>     
+        <a class="btn whatsapp" href="https://wa.me/79224166606" target="_blank">Заказать в WhatsApp</a>
+      </div>
+
+      <p>Доставка с 10:00 до 20:00</p>
+    </div>
+  </section>
+
+  <!-- Популярные блюда -->
   <section class="section menu-section">
     <h2>Популярные блюда</h2>
     <div class="menu">
-      <article class="card">
-        <img src="https://images.unsplash.com/photo-1604908177522-70f96e1a236b?auto=format&fit=crop&w=400&q=80" alt="Чак-чак">
-        <div class="card-content">
-          <h3>Чак-чак</h3>
-          <p>Сладкие татарские шарики с мёдом.</p>
-          <div class="price">150₽</div>
-          <a class="order-btn" href="https://t.me/+79224166606" target="_blank">Заказать</a>
-        </div>
-      </article>
-      <article class="card">
-        <img src="https://images.unsplash.com/photo-1606755962774-5f3b0481059b?auto=format&fit=crop&w=400&q=80" alt="Эчпочмак">
-        <div class="card-content">
-          <h3>Эчпочмак</h3>
-          <p>Треугольные пирожки с мясом и картофелем.</p>
-          <div class="price">180₽</div>
-          <a class="order-btn" href="https://wa.me/79224166606" target="_blank">Заказать</a>
-        </div>
-      </article>
-      <article class="card">
-        <img src="https://images.unsplash.com/photo-1601050688397-74a8c1f32f6c?auto=format&fit=crop&w=400&q=80" alt="Перемяч">
-        <div class="card-content">
-          <h3>Перемяч</h3>
-          <p>Жареные пирожки с мясом.</p>
-          <div class="price">120₽</div>
-          <a class="order-btn" href="https://t.me/+79224166606" target="_blank">Заказать</a>
-        </div>
-      </article>
-      <article class="card">
-        <img src="https://images.unsplash.com/photo-1601050687865-b8d1a735f0e6?auto=format&fit=crop&w=400&q=80" alt="Баурсак">
-        <div class="card-content">
-          <h3>Баурсак</h3>
-          <p>Маленькие мягкие пончики, идеальны к чаю.</p>
-          <div class="price">100₽</div>
-          <a class="order-btn" href="https://wa.me/79224166606" target="_blank">Заказать</a>
-        </div>
-      </article>
-      <article class="card">
-        <img src="https://images.unsplash.com/photo-1601050687457-1a28aee73a0f?auto=format&fit=crop&w=400&q=80" alt="Домашние супы">
-        <div class="card-content">
-          <h3>Домашние супы</h3>
-          <p>Свежие супы каждый день, как дома.</p>
-          <div class="price">200₽</div>
-          <a class="order-btn" href="https://t.me/+79224166606" target="_blank">Заказать</a>
-        </div>
-      </article>
-      <article class="card">
-        <img src="https://images.unsplash.com/photo-1601050687042-7a2f748b0e3d?auto=format&fit=crop&w=400&q=80" alt="Горячие блюда">
-        <div class="card-content">
-          <h3>Горячие блюда</h3>
-          <p>Мясо и гарниры прямо с кухни.</p>
-          <div class="price">250₽</div>
-          <a class="order-btn" href="https://wa.me/79224166606" target="_blank">Заказать</a>
-        </div>
-      </article>
+      <div class="card">🍯 Чак-чак</div>
+      <div class="card">🥟 Эчпочмак</div>
+      <div class="card">🥟 Перемяч</div>
+      <div class="card">🍩 Баурсак</div>
+      <div class="card">🍲 Домашние супы</div>
+      <div class="card">🥩 Горячие блюда</div>
     </div>
   </section>
 
+  <!-- Доставка -->
   <section class="delivery">
     <h2>🚚 Быстрая доставка татарской кухни</h2>
-    <p>Работаем ежедневно
-10:00 — 20:00</p>
+    <p>Работаем ежедневно<br>10:00 — 20:00</p>
   </section>
-</main>
 
-<footer>
-  <p>Татарская кухня • ИП Альфия</p>
-  <div class="phone">📞 +7 922 416-66-06</div>
-</footer>
-
-<script>
-  // Появление карточек при скролле
-  const cards = document.querySelectorAll('.card');
-  const observer = new IntersectionObserver((entries)=>{
-    entries.forEach(entry=>{
-      if(entry.isIntersecting){
-        entry.target.style.animation='fadeInUp 0.6s forwards';
-      }
-    });
-  }, {threshold:0.2});
-  cards.forEach(card=>observer.observe(card));
-</script>
+  <!-- Футер -->
+  <footer>
+    <p>Татарская кухня • ИП Альфия</p>
+    <div class="phone">📞 +7 922 416-66-06</div>
+  </footer>
 
 </body>
 </html>
